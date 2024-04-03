@@ -87,10 +87,10 @@ a:hover {
 
 #home {
 
-    background-image: url(/img/space_bg.jpg);
+    background-image: url(/img/marcell-rubies-f5rgTGSIaqI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: left center;
     position: relative;
 
 }
@@ -98,8 +98,8 @@ a:hover {
 #homeCover {
 
     position: absolute;
-    -webkit-backdrop-filter: brightness(0.35) blur(3px);
-    backdrop-filter: brightness(0.35) blur(3px);
+    -webkit-backdrop-filter: brightness(0.75) blur(1px);
+    backdrop-filter: brightness(0.75) blur(1px);
     width: 100%;
     height: 100%;
 
