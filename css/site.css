@@ -87,10 +87,10 @@ a:hover {
 
 #home {
 
-    background-image: url(/img/marcell-rubies-f5rgTGSIaqI-unsplash.jpg);
+    background-image: url(/img/jonathan-bean-Ejpx_sdKEKo-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: center;
     position: relative;
 
 }
@@ -99,7 +99,7 @@ a:hover {
 
     position: absolute;
     -webkit-backdrop-filter: brightness(0.75) blur(1px);
-    backdrop-filter: brightness(0.75) blur(1px);
+    backdrop-filter: brightness(0.5) blur(3px);
     width: 100%;
     height: 100%;
 
@@ -113,8 +113,9 @@ a:hover {
 
 .mainLogo {
 
-    height: 0.5em;
-    padding-left: 0.2em;
+    height: 2em;
+    padding-left: 0em;
+    
 
 }
 
@@ -169,6 +170,30 @@ footer .bi:hover {
 .section-page:nth-child(odd) {
     background-color: var(--rs-theme-150);
 }
+
+.attribution-container {
+    position: relative;
+    overflow: hidden;
+    width: min-content;
+}
+
+.attribution-container > .attribution {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--rs-theme-200);
+    font-size: .8rem;
+
+    transform: translateY(100%);
+    transition: transform .2s ease-in;
+}
+
+.attribution>a {
+    color: var(--rs-theme-400);
+}
+
+.attribution-container:hover > .attribution {
+    transform: translateY(0);
+}
+
 
 /********* #region MEDIA QUERIES ********/
 /* // Small devices (landscape phones, 576px and up) */
