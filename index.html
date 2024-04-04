@@ -29,6 +29,7 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/menuPill.css" />
     <link rel="stylesheet" href="/css/iconCard.css" />
     <link rel="stylesheet" href="/css/themes.css" />
     <link rel="stylesheet" href="/css/site.css" />
@@ -36,11 +37,127 @@
 
 <body data-rs-theme="teal">
 
-    <div id="menuPillContainer">
+    <div id="menuPillContainer" class="navbar navbar-dark">
+
+        <nav id="menuPill" class="navbar-nav text-light">
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#home">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-house-fill"></i>
+
+                    </div>
+
+                    <span class="menu-label">Home</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#about">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-file-person-fill"></i>
+
+                    </div>
+
+                    <span class="menu-label">About Me</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#skills">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-tools"></i>
+
+                    </div>
+
+                    <span class="menu-label">Skills</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#projects">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-braces-asterisk"></i>
+
+                    </div>
+
+                    <span class="menu-label">Projects</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#challenges">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-terminal"></i>
+
+                    </div>
+
+                    <span class="menu-label">Challenges</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#blog">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-quote"></i>
+
+                    </div>
+
+                    <span class="menu-label">Blog</span>
+
+                </a>
+
+            </div>
+
+            <div class="nav-item">
+
+                <a class="nav-link" href="#contact">
+
+                    <div class="icon-container">
+
+                        <i class="bi bi-envelope-at-fill"></i>
+
+                    </div>
+
+                    <span class="menu-label">Contact</span>
+
+                </a>
+
+            </div>
+
+        </nav>
 
     </div>
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
 
         <section id="home">
 
@@ -50,23 +167,23 @@
 
                     <div class="row align-items-end">
 
-                        <div class="col-12 col-lg-5 mx-lg-3">
+                        <div class="col-12 col-lg-5">
 
-                            <div class="mainTitle text-center">
+                            <div class="mainTitle text-center text-md-end mb-4 mb-md-0">
                                 <img src="/img/White Logo - no background - svg.svg" class="mainLogo" />
                             </div>
 
                         </div>
 
-                        <div class="col-12 col-lg-6 p-0">
+                        <div class="col-12 col-lg-6 p-0 text-center text-md-start">
 
-                            <div class="mainTitle text-center">
+                            <div class="mainTitle">
 
                                 Roman
 
                             </div>
 
-                            <div class="mainTitle text-center">
+                            <div class="mainTitle">
 
                                 Steele
 
@@ -173,7 +290,8 @@
 
                             <div class="icon-card-body">
                                 <p>
-                                    I use a combination of HTML, CSS, and Bootstrap to create professional front-end websites that
+                                    I use a combination of HTML, CSS, and Bootstrap to create professional front-end
+                                    websites that
                                     efficiently display information while maintaining engagement from the audience.
                                 </p>
                             </div>
@@ -214,7 +332,9 @@
 
                             <div class="icon-card-body">
                                 <p>
-                                    Knowledge of SQL is pivotal to any work with databases. My experience with SQL and the use of it with all of my websites using databases has conditioned me to be able to write SQL on any DB platforms.
+                                    Knowledge of SQL is pivotal to any work with databases. My experience with SQL and
+                                    the use of it with all of my websites using databases has conditioned me to be able
+                                    to write SQL on any DB platforms.
                                 </p>
                             </div>
 
@@ -233,7 +353,8 @@
 
                             <div class="icon-card-body">
                                 <p>
-                                    I use git and github for all my projects. I use git/github to increase my work-flow and allow for a safe-backup for any and all changes made to projects.
+                                    I use git and github for all my projects. Using git/github, I increase my work-flow
+                                    and allow for safe-backups for any and all changes made to projects.
                                 </p>
                             </div>
 
