@@ -85,6 +85,7 @@ a:hover {
 
 }
 
+
 #home {
 
     background-image: url(/img/jonathan-bean-Ejpx_sdKEKo-unsplash.jpg);
@@ -137,6 +138,7 @@ a:hover {
 
 }
 
+
 footer {
 
     background-color: var(--rs-theme-900);
@@ -163,13 +165,38 @@ footer .bi:hover {
 
 }
 
-.section-page:nth-child(even) {
+
+.section-page {
+    --divider-height: 3rem;
+
+    padding-top: 5rem;
+    padding-bottom: calc(5rem + var(--divider-height));
+    position: relative;
+    margin-top: calc(0rem - var(--divider-height));
+}
+
+/* pseudo-element */
+.section-page>.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--divider-height);
+    z-index: 1;
+    clip-path: ellipse(50% 100% at top center);
+}
+
+.section-page:nth-child(even), 
+.section-page:nth-child(even)>.container::after {
     background-color: var(--rs-theme-100);
 }
 
-.section-page:nth-child(odd) {
+.section-page:nth-child(odd),
+.section-page:nth-child(odd)>.container::after {
     background-color: var(--rs-theme-150);
 }
+
 
 .attribution-container {
     position: relative;
@@ -217,10 +244,32 @@ footer .bi:hover {
 @media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .section-page:nth-child(even)>.container::after {
+
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+
+    }
+
+    .section-page:nth-child(odd)>.container::after {
+
+        clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+
+    }
+
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+    .section-page {
+
+        --divider-height: 5rem;
+
+    }
+
+}
