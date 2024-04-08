@@ -86,6 +86,7 @@ a:hover {
 }
 
 
+/* #region Home Page */
 #home {
 
     background-image: url(/img/jonathan-bean-Ejpx_sdKEKo-unsplash.jpg);
@@ -147,8 +148,9 @@ a:hover {
     font-weight: 300;
 
 }
+/* #endregion Home Page */
 
-
+/* #region Footer */
 footer {
 
     background-color: var(--rs-theme-900);
@@ -174,8 +176,9 @@ footer .bi:hover {
     color: var(--rs-theme-400);
 
 }
+/* #endregion Footer */
 
-
+/* #region Page Divider */
 .section-page {
     --divider-height: 3rem;
 
@@ -230,6 +233,7 @@ footer .bi:hover {
 .attribution-container:hover > .attribution {
     transform: translateY(0);
 }
+/* #endregion Page Divider */
 
 
 /********* #region MEDIA QUERIES ********/
