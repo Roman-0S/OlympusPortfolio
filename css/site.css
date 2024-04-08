@@ -114,27 +114,37 @@ a:hover {
 
 .mainLogo {
 
-    height: 2em;
-    padding-left: 0em;
-    
+    padding: 1rem;
 
 }
 
 .mainTitle {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainTitle img {
+    height: 12rem;;
+}
+
+.mainTitle .name {
+
     font-family: var(--rs-title-font);
-    font-size: 5rem;
-    line-height: 4rem;
+    font-size: 6rem;
+    line-height: 5rem;
 }
 
 .subTitle {
 
     font-family: var(--rs-subtitle-font);
     text-transform: uppercase;
-    font-size: 1.28rem;
+    font-size: 1.3rem;
     line-height: 1.1rem;
     font-weight: 300;
-    letter-spacing: 0.1rem;
 
 }
 
@@ -227,15 +237,11 @@ footer .bi:hover {
 @media (min-width: 576px) {
 
     .mainTitle {
-        font-size: 7rem;
-        line-height: 5.5rem;
+        flex-direction: row;
     }
 
-    .subTitle {
-        font-size: 1.7rem;
-        line-height: 1.2rem;
-        letter-spacing: .19rem;
-        padding-top: .25rem;
+    .mainTitle img {
+        height: 10rem;
     }
 
 }
