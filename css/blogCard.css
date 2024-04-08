@@ -69,3 +69,10 @@
 .blog-article:nth-child(even)>.blog-row .blog-image:hover {
     transform: scale(1.2) rotate(-5deg);
 }
+
+.blog-article:nth-child(odd) .blog-foot {
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+}
