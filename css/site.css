@@ -85,6 +85,10 @@ a:hover {
 
 }
 
+.T-UP-Scale {
+    scale: 1.3;
+}
+
 
 /* #region Home Page */
 #home {
